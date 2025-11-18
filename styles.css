@@ -1,0 +1,539 @@
+/* Reset and base */
+body {
+  margin: 0;
+  background-color: #f9f9f9; /* 30% light gray */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Header and nav */
+header {
+  background-color: #2a7f62; /* 60% deep green */
+  padding: 10px 20px;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex: 1;
+}
+ul.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+ul.nav-links li a:hover {
+  text-decoration: underline;
+}
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.search-container form {
+  display: flex;
+}
+.search-container input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.search-container button {
+  background-color: #f4a261; /* 10% warm orange accent */
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('HOMEPAGEPIC.jpg') no-repeat center center / cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h1, h2 {
+  color: #2a7f62; /* 60% deep green */
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background-color: #e6f0eb; /* subtle greenish background */
+  border-radius: 8px;
+  overflow: hidden;
+}
+table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2a7f62;
+  font-size: 1.2rem;
+  text-align: left;
+  padding-left: 10px;
+}
+table th,
+table td {
+  border: 1px solid #a3c1b0;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0faf6;
+  color: #1f4d3a;
+}
+table th {
+  background-color: #2a7f62;
+  color: white;
+  font-weight: 600;
+}
+table a {
+  color: #f4a261; /* accent orange */
+  text-decoration: underline;
+}
+table a:hover {
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Image attribution */
+.image-attribution {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: -8px;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #2a7f62; /* 60% deep green */
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+footer .footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-container div,
+footer .footer-container a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+footer .footer-container a:hover {
+  text-decoration: underline;
+}
+footer .footer-container img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Container for side-by-side sections */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.actions,
+.gen-green {
+  flex: 1;
+  text-align: left;
+}
+
+.HOMEPAGEPICTWO {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Visions Section */
+.visions {
+  background-color: #2a7f62; /* 60% deep green */
+  padding: 40px 20px;
+}
+.visions h2 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  height: 100px;
+}
+.image-item p {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 450px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Ongoing Climate Initiatives + Progress section */
+.initiatives-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.initiatives-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.initiatives-text h2 {
+  color: #2a7f62;
+  margin: 0;
+}
+.initiatives-text p {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+  line-height: 1.5;
+}
+.initiatives-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: block;
+}
+.initiatives-image .image-attribution {
+  margin-top: 5px;
+  color: #666;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .initiatives-container {
+    grid-template-columns: 1fr;
+  }
+  .initiatives-image img {
+    height: auto;
+  }
+}
+
+/* Climate Facts and Blog Posts Section */
+.climate-facts-blog {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #2a7f62; /* deep green background */
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: white;
+}
+.climate-facts-blog h2 {
+  color: #f9f9f9;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.fact-post {
+  background-color: #3a9a75; /* lighter green card */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #f0f9f4;
+  transition: background-color 0.3s ease;
+}
+.fact-post:hover {
+  background-color: #4db68a;
+}
+.fact-post img {
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.fact-post h3 {
+  color: #e9f7f1;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.fact-post p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.fact-source a {
+  color: #f4a261; /* accent orange */
+  text-decoration: underline;
+}
+.fact-source a:hover {
+  text-decoration: none;
+}
+
+/* Responsive for Climate Facts */
+@media (max-width: 900px) {
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Container for Call to Action section */
+section.call-to-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+/* Left side: Call to Action text aligned left */
+.call-to-action .cta-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Right side: Join the Movement + Support Us with background */
+.call-to-action .cta-action {
+  background-color: #e6f0eb; /* light green background */
+  padding: 20px 30px;
+  border-radius: 8px;
+  min-width: 220px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Join the Movement heading */
+.call-to-action .join-movement {
+  margin: 0;
+  color: #2a7f62;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Support button */
+.support-button {
+  background-color: #f4a261;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+.support-button:hover,
+.support-button:focus {
+  background-color: #e07b3f;
+  outline: none;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 600px) {
+  section.call-to-action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .call-to-action .cta-action {
+    width: 100%;
+    min-width: auto;
+    margin-top: 20px;
+  }
+}
+
+/* Roots */
+/* roots-styles.css */
+
+/* Reset and base */
+#roots-body {
+  margin: 0;
+  background-color: #f9f9f9; /* 30% light gray */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+/* Header and nav */
+#roots-header {
+  background-color: #2a7f62; /* 60% deep green */
+  padding: 10px 20px;
+  color: white;
+}
+#roots-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#roots-header .roots-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex: 1;
+}
+#roots-header ul.roots-nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* History Section */
+#roots-history-section {
+  display: flex; /* Arrange text and image side by side */
+  gap: 20px; /* Space between text and image */
+  background-color: #2a7f62; 
+  color: white; 
+  padding: 20px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 40px; 
+  flex-wrap: wrap; 
+  align-items: stretch; 
+}
+#roots-history-section .roots-history-text {
+  flex: 1 1 300px; 
+  font-size: 1.1rem; 
+  line-height: 1.5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center text */
+  margin: 0; 
+}
+#roots-history-section .roots-history-image {
+  flex: 1 1 300px;
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; 
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Shadow */
+}

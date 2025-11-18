@@ -1,0 +1,177 @@
+/* Reset and base */
+body {
+  margin: 0;
+  background-color: #f9f9f9; /* 30% light gray */
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Header and nav */
+header {
+  background-color: #2a7f62; /* 60% deep green */
+  padding: 10px 20px;
+  color: white;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  flex: 1;
+}
+ul.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+ul.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+ul.nav-links li a:hover {
+  text-decoration: underline;
+}
+.search-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.search-container form {
+  display: flex;
+}
+.search-container input[type="text"] {
+  padding: 5px 10px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.search-container button {
+  background-color: #f4a261; /* 10% warm orange accent */
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url('HOMEPAGEPIC.jpg') no-repeat center center / cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 40px;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  padding: 20px;
+  max-width: 800px;
+}
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+.hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+h1, h2 {
+  color: #2a7f62; /* 60% deep green */
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+/* Climate Facts and Blog Posts Section */
+.climate-facts-blog {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: white;
+}
+.climate-facts-blog h2 {
+  color: #3a9a75;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.fact-post {
+  background-color: #3a9a75; /* lighter green card */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #f0f9f4;
+  transition: background-color 0.3s ease;
+}
+.fact-post:hover {
+  background-color: #4db68a;
+}
+.fact-post img {
+  border-radius: 8px;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.fact-post h3 {
+  color: #e9f7f1;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.fact-post p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.fact-source a {
+  color: #f4a261; /* accent orange */
+  text-decoration: underline;
+}
+.fact-source a:hover {
+  text-decoration: none;
+}
