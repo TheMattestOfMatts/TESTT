@@ -154,10 +154,10 @@ p {
 }
 .fact-post img {
   border-radius: 8px;
-  max-height: 150px;
-  object-fit: cover;
   margin-bottom: 15px;
-  width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
 .fact-post h3 {
   color: #e9f7f1;
@@ -174,4 +174,5 @@ p {
 }
 .fact-source a:hover {
   text-decoration: none;
+
 }
